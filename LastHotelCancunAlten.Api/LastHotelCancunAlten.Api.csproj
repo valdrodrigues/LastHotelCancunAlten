@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LastHotelCancunAlten.Application\LastHotelCancunAlten.Application.csproj" />
+    <ProjectReference Include="..\LastHotelCancunAlten.Domain\LastHotelCancunAlten.Domain.csproj" />
+    <ProjectReference Include="..\LastHotelCancunAlten.Infra\LastHotelCancunAlten.Infra.csproj" />
+  </ItemGroup>
+
+    <PropertyGroup>
+	    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	    <NoWarn>$(NoWarn);1591</NoWarn>
+	    <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+
+</Project>
